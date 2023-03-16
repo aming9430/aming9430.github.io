@@ -58,6 +58,7 @@ h5::before{
 p{
   margin:20px 0;
   line-height:30px;
+  font-size:1.2em;
 }
 button{
   color:#fff;
@@ -68,7 +69,7 @@ button{
   border:none;
   background:pink;
   border-radius:20px;
-  tranisition:all 0.3s ease;
+    transition:all 0.3s ease;
 }
 span{
   color:pink;
@@ -77,12 +78,31 @@ button:hover{
   color:pink;
   background:#fff;
 }
+@media screen and (max-width:576px) { 
+    .main{
+        max-width:560px;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    img{
+        width:80%;
+        border-radius: 50%;
+    }
+    .about-text{
+        width:90%;
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+   
+
     </style>
 </head>
 <body>
     <section>
   <div class="main">
-    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/curry-1655448306.png?crop=0.490xw:0.981xh;0,0&resize=640:*" alt="">
+    <img src="image/sister.jpg" alt="">
     <div class="about-text">
         <h1>About Us</h1>
       <h5>吉他手 <span>& 攝影師</span></h5>
