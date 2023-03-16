@@ -115,20 +115,29 @@ button:hover{
 }
 
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <section>
   <div class="main">
-    <img src="image/sister.jpg" alt="">
+    <img data-aos="flip-left" src="image/sister.jpg" alt="">
     <div class="about-text">
         <h1>About Us</h1>
-      <h5>吉他手 <span>& 攝影師</span></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
-      <button type='button'>let's talk</button>
+      <h5 data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">吉他手 <span>& 攝影師</span></h5>
+        <p data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
+      <button type='button' data-aos="zoom-in-up">let's talk</button>
     </div>
   </div>
   
   
 </section>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
