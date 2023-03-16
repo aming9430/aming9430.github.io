@@ -40,7 +40,7 @@ h1,h5,p{
 }
 h1{
   font-size:3.5rem;
-  
+  margin-bottom: 15px;
 }
 h5{
   font-size:2rem;
@@ -70,6 +70,7 @@ button{
   background:pink;
   border-radius:20px;
     transition:all 0.3s ease;
+    font-weight: 500;
 }
 span{
   color:pink;
@@ -77,6 +78,16 @@ span{
 button:hover{
   color:pink;
   background:#fff;
+}
+
+.brother{
+    display:none
+}
+.brother.active{
+    display:block;
+}
+.sister.hide{
+    display:none;
 }
 @media screen and (max-width:576px) { 
     .main{
@@ -106,38 +117,56 @@ button:hover{
         width:80%;
         border-radius: 50%;
         height:280px;
+        margin:0 auto;
+        display:block;
     }
     .about-text{
         width:90%;
         padding: 0;
-        margin-top: 20px;
+        
+        text-align: justify;
+        margin:20px auto 0;
     }
 }
 
     </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <section>
-  <div class="main">
+  <div class="main sister" id="sister">
     <img data-aos="flip-left" src="image/sister.jpg" alt="">
     <div class="about-text">
         <h1>About Us</h1>
       <h5 data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">吉他手 <span>& 攝影師</span></h5>
+      data-aos-anchor-placement="center-bottom">阮氏燕兒 <span>& 愛睡覺</span></h5>
         <p data-aos="fade-left"
         data-aos-anchor="#example-anchor"
         data-aos-offset="500"
         data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
-      <button type='button' data-aos="zoom-in-up">let's talk</button>
+      <button id='sister-btn'type='button' data-aos="zoom-in-up">A ming</button>
     </div>
   </div>
-  
+  <div class="main brother" id="brother">
+    <img data-aos="flip-left" src="image/brother.jpg" alt="">
+    <div class="about-text">
+        <h1>About Us</h1>
+      <h5 data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">陳冠銘 <span>& 愛學習</span></h5>
+        <p data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
+      <button id='brother-btn'type='button' data-aos="zoom-in-up">beo em</button>
+    </div>
+  </div>
   
 </section>
 <script>
     AOS.init();
   </script>
+  <script src="script/script.js"></script>
 </body>
 </html>
