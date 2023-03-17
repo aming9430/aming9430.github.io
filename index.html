@@ -5,171 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
-    *{
-  margin:0;
-  padding: 0;
-  box-sizing:border-box;
-}
-body{
-  background:black;
- 
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-section{
-    margin-top:50px;
-}
-.main{
-  width:1200px;
-  margin:0 auto;
-  max-width:95%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-img{
-  width:90%;
-  height:400px;
-  width:30%;
-}
-.about-text{
-  width:50%;
-  padding:0 60px;
-}
-h1,h5,p{
-  color:#fff;
-}
-h1{
-  font-size:3.5rem;
-  margin-bottom: 15px;
-}
-h5{
-  font-size:2rem;
-  position:relative;
-}
-h5::before{
-  content:'';
-  position:absolute;
-  width:150px;
-  height:2px;
-  bottom:0;
-  left:0;
-  background:pink;
-}
-p{
-  margin:20px 0;
-  line-height:30px;
-  font-size:1.2em;
-}
-button{
-  color:#fff;
-  width:100px;
-  height:40px;
-  line-height:40px;
-  outline:none;
-  border:none;
-  background:pink;
-  border-radius:20px;
-    transition:all 0.3s ease;
-    font-weight: 500;
-}
-span{
-  color:pink;
-}
-button:hover{
-  color:pink;
-  background:#fff;
-}
-
-.brother{
-    display:none
-}
-.brother.active{
-    display:block;
-}
-.sister.hide{
-    display:none;
-}
-@media screen and (max-width:576px) { 
-    .main{
-        max-width:560px;
-        flex-direction: column;
-        flex-wrap:wrap;
-        justify-content: center;
-    }
-    img{
-        width:80%;
-        border-radius: 50%;
-    }
-    .about-text{
-        width:90%;
-        padding: 0;
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width:390px) { 
-    .main{
-        max-width:360px;
-        flex-direction: column;
-        flex-wrap:wrap;
-        justify-content: center;
-    }
-    img{
-        width:80%;
-        border-radius: 50%;
-        height:280px;
-        margin:0 auto;
-        display:block;
-    }
-    .about-text{
-        width:90%;
-        padding: 0;
-        
-        text-align: justify;
-        margin:20px auto 0;
-    }
-}
-
-    </style>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <section>
-  <div class="main sister" id="sister">
-    <img data-aos="flip-left" src="image/sister.jpg" alt="">
-    <div class="about-text">
-        <h1>About Us</h1>
-      <h5 data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">阮氏燕兒 <span>& 愛睡覺</span></h5>
-        <p data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
-      <button id='sister-btn'type='button' >A ming</button>
+    <div id="author">
+        <p>嗨!，我是</p>
+        <h1>陳冠銘</h1>
+        <button type="button" id="about-btn" >關於我</button>
     </div>
-  </div>
-  <div class="main brother" id="brother">
-    <img data-aos="flip-left" src="image/brother.jpg" alt="">
-    <div class="about-text">
-        <h1>About Us</h1>
-      <h5 data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">陳冠銘 <span>& 愛學習</span></h5>
-        <p data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim deserunt repellat? Modi adipisci minus aliquid iure impedit error? Voluptatem sequi, sed esse fuga explicabo qui laborum atque labore nostrum.</p>
-      <button id='brother-btn'type='button' >beo em</button>
+
+    <div class="container">
+        <h2>自我介紹</h2>
+        <p>我是一位就讀宏國德霖科技大學的大學生，目前在學三年級。就讀資訊工程系，</p>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="image-info">
+                    <img src="https://media.gettyimages.com/id/1346845738/zh/%E7%85%A7%E7%89%87/san-francisco-ca-oct-15-golden-state-warriors-guard-stephen-curry-reacts-after-scoring-a-three.jpg?s=612x612&w=gi&k=20&c=eo0k-YzJmuPHkdkyk0kUdqHt6WavXJQFGUQp0Xu5X2A=" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="image-text">
+                    <div class="text-info">
+                        <h2>姓名：陳冠銘</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>年齡：２０</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>國籍：台灣</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>職業：學生</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>生日：９１／０４／１６</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>郵件：aming9430@gmail.com</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>興趣：彈吉他，拍攝，學語言，出遊，打籃球</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>情感：單身</h2>
+                    </div>
+                    <div class="text-info">
+                        <h2>偶像：Stephen Curry</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <h2>吉他作品</h2>
+        <div class="row">
+            
+            <div class="col-4">
+                <div class="video-border">
+                    <div class="video-show">
+                        <video src="./video/show-time.mp4" muted loop controls="true" autoplay ></video>
+                    </div>
+                    <div class="video-info">
+                        <h3>曲目：寶貝</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="video-border">
+                    <div class="video-show">
+                        <video src="./video/show-time.mp4" muted loop controls="true" autoplay ></video>
+                    </div>
+                    <div class="video-info">
+                        <h3>曲目：寶貝</h3>
+                    </div>
+
+                </div>
+            </div> <div class="col-4">
+                <div class="video-border">
+                    <div class="video-show">
+                        <video src="./video/show-time.mp4" muted loop controls="true" autoplay ></video>
+                    </div>
+                    <div class="video-info">
+                        <h3>曲目：寶貝</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h2>拍攝作品</h2>
+        <div class="row">
+            
+            <div class="col-3">
+                <div class="photo-border">
+                    <div class="photo-img">
+                        <img src="image/baby-22.jpg" alt="">
+                    </div>
+                    <div class="photo-text">
+                        <h3>阮氏燕兒</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="photo-border">
+                    <div class="photo-img">
+                        <img src="image/baby-22.jpg" alt="">
+                    </div>
+                    <div class="photo-text">
+                        <h3>阮氏燕兒</h3>
+                    </div>
+                </div>
+            </div> <div class="col-3">
+                <div class="photo-border">
+                    <div class="photo-img">
+                        <img src="image/sister.jpg" alt="">
+                    </div>
+                    <div class="photo-text">
+                        <h3>阮氏燕兒</h3>
+                    </div>
+                </div>
+            </div> <div class="col-3">
+                <div class="photo-border">
+                    <div class="photo-img">
+                        <img src="image/baby-22.jpg" alt="">
+                    </div>
+                    <div class="photo-text">
+                        <h3>阮氏燕兒</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-  
-</section>
-<script>
-    AOS.init();
-  </script>
-  <script src="script/script.js"></script>
+    <footer>
+
+        ....
+    </footer>
 </body>
 </html>
