@@ -301,6 +301,10 @@ footer{
         margin:10px 15px 10px;
     }
 	.abc{
+<<<<<<< HEAD
 color:blue;
+=======
+	color:red;
+>>>>>>> bab62da19693f997ab5663f4cf0b0f4edacf7141
 }
 }
